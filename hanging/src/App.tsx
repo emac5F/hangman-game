@@ -1,3 +1,4 @@
+import { HangImage } from './components/HangImage';
 import { letters } from './helpers/letters';
 
 import './App.css'
@@ -6,8 +7,9 @@ function App() {
 
   return (
     <div className='App'>
+      
       {/* Imagenes */}
-      <h3>Imagen del juego</h3>
+      <HangImage imageNumber={9}/>
 
       {/* Palabra oculta */}
       <h3>_ _ _ _ _ _ _ _ _ _</h3>
