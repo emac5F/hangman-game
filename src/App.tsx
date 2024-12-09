@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-  const [ word ] = useState( getRandomWord() );//palabra oculta
+  const [ word, setWord ] = useState( getRandomWord() );//palabra oculta
   const [ hiddenWord, setHiddenWord ] = useState( '_ '.repeat( word.length ) );
   const [ attempts, setAttempts ] = useState(0); //intentos
   const [ lose, setLose ] = useState( false );//perder
@@ -50,6 +50,17 @@ function App() {
     setHiddenWord( hiddenWordArray.join(' ') );
   }
 
+  const newGame = () => {
+    const newWord = getRandomWord();
+
+    setWord( newWord );
+    setHiddenWord( '_ '.repeat( newWord.length ) );
+    setAttempts( 0 );
+    setLose( false );
+    setWon( false );
+  }
+
+
   return (
     <div className='App'>
       
@@ -85,6 +96,9 @@ function App() {
           </button>
         )
       )}
+
+      <br />
+      <button onClick={ newGame }>¿Nuevo juego?</button>
 
     </div>
   )
