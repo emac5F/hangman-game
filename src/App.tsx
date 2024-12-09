@@ -76,13 +76,13 @@ function App() {
       {/* Mensaje si perdio */}
       {
         ( lose ) 
-        ? <h2>Perdió { word }</h2>
+        ? <h2 className='lose'>Perdió { word }</h2>
         : ''
       }
       {/* Mensaje si ganó */}
       {
         ( won ) 
-        ? <h2>Felicidades!, Usted ganó</h2>
+        ? <h2 className='won'>Felicidades!, Usted ganó</h2>
         : ''
       }
 
@@ -98,7 +98,7 @@ function App() {
       )}
 
       <br />
-      <button onClick={ newGame }>¿Nuevo juego?</button>
+      <button className='newGame' onClick={ newGame }>¿Nuevo juego?</button>
 
     </div>
   )
