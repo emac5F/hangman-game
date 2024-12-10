@@ -76,7 +76,7 @@ function App() {
       {/* Mensaje si perdio */}
       {
         ( lose ) 
-        ? <h2 className='lose'>Perdió { word }</h2>
+        ? <h2 className='lose'>Perdió: { word }!</h2>
         : ''
       }
       {/* Mensaje si ganó */}

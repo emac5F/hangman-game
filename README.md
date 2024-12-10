@@ -1,5 +1,14 @@
 # hangman-game
-Poniendo en práctica el curso de 'fundamentos de programación' de Fernando Herrera, se realiza un juego de ahorcados
+Putting into practice Fernando Herrera's 'programming fundamentals' course - React hangman game
+
+# Execute:
+1. Clone or download the code
+
+2. Run npm install
+
+3. Run npm run dev
+
+4. Open localhost:3000 or the url shown by the console
 
 
 # React + TypeScript + Vite
